@@ -6,8 +6,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 physicsClient = p.connect(p.GUI)#or p.DIRECT for non-graphical version
 
-print("hi")
-
 p.setAdditionalSearchPath(pybullet_data.getDataPath()) #optionally
 p.setGravity(0,0,-1) 
 planeId = p.loadURDF("plane.urdf") #where is plane.urdf
